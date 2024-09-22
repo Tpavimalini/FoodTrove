@@ -1,0 +1,192 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,300&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
+
+.ubuntu-light {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .ubuntu-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .ubuntu-medium {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .ubuntu-bold {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .ubuntu-light-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  .poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+    
+
+.search_bar .search_field{
+    padding: 4px;
+}
+.home_banner{
+    height: 100vh;
+    width: 100%;
+    background: url('../images/banner/home_banner.png') no-repeat center;
+    background-size: cover;
+}
+.service_card{
+  padding: 10px;
+}
+.service_card_body{
+  border-radius: 12px;
+}
+.service_card:nth-child(1) .service_card_body{
+  background: url('../images/banner/home__card_1.png') no-repeat center;
+  background-size: cover;
+}
+.service_card:nth-child(2) .service_card_body{
+  background: url('../images/banner/home__card_2.png') no-repeat center;
+  background-size: cover;
+}
+.service_card:nth-child(3) .service_card_body{
+  background: url('../images/banner/home__card_3.png') no-repeat center;
+  background-size: cover;
+}
+
+.service_card_body h6{
+  width: 70%;
+  height: 60px;
+}
+/* _________NAVBAR________ */
+.menu_icon{
+  display: none;
+}
+.nav_item ul{
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  list-style: none;
+}
+.nav_item ul li a{
+  text-decoration: none;
+  font-size: 15px;
+  color: #000;
+  padding: 5px 10px;
+}
+.user_nav_item {
+  padding: 5px;
+  position: relative;
+}
+.user_nav_item .cart_number{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgb(255, 38, 0);
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: bold;
+}
+nav{
+  /* position: relative; */
+}
+.status{
+  padding: 5px 10px;
+  border-radius: 12px 0 12px 0;
+  background: #ca4545;
+  color: #fff;
+  font-size: 12px;
+}
+
+/* ##############responsive#####d########### */
+@media only screen and (max-width : 768px) {
+  .col-center{
+    width: 50%;
+    margin: auto;
+  }
+  .menu_icon{
+    display: block;
+  }
+  .nav_item{
+    display: none;
+  }
+  @keyframes toggle {
+    0%{
+      transform: translateX(100px);
+    }
+    100%{
+      transform: translateX(0px);
+    }
+  }
+  .active ul{
+    flex-direction: column;
+  }
+  .active{
+    margin-top: 20px;
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 50%;
+    right: 0;
+    background: #f8f6f68f;
+    backdrop-filter: blur(10px);
+    height: 100%;
+    animation: toggle .5s ease-in-out;
+    transition: all .5s;
+  }
+
+
+  .user_nav_item p{
+    display: none;
+  }
+}
